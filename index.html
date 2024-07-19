@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Yukti Sharma</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Yukti Sharma</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.jpg" alt="Yukti profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yukti Sharma</h1>
+        <p class="section__text__p2">Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Yukti_Sharma.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/yukti-sharma24'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Yukti-create'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Fresher <br />Full Stack Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Btech Bachelors Degree<br />Computer Science and Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Hi, I'm Yukti Sharma, a recent graduate with a BTech degree in Computer Science and Engineering from JIET, Jodhpur.
+              As a passionate and driven individual, I have a keen interest in full-stack development.
+              I have completed internships at HCL and DRDO, in full-stack development, focusing on technologies such as ReactJS, MongoDB, and ASP.NET.
+              My education and project experiences have equipped me with a solid foundation in both front-end and back-end technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ReactJS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Programming Languages</h2>
+            <div class="article-container">
+              
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>Java</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+          <article>
+            <img
+              src="./assets/checkmark.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <div>
+              <h3>ReactJS</h3>
+              <p>Basic</p>
+            </div>
+          </article>
+
+         
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C-sharp</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+                  
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              Developed a web-based water intake tracker crafted with HTML, CSS, and JavaScript. Features include setting daily intake goals, recording water consumption 
+              with interactive buttons, visual progress tracking with a dynamic progress bar and statistical insights such as average intake and achievement rates
+            </div>
+            <h2 class="experience-sub-title project-title">Hydration Tracker </h2>
+            </div>
+         
+         
+          <div class="details-container color-container">
+            <div class="article-container">
+              Leveraging ASP.NET for frontend development, providing employers with a user‑friendly interface to gather information about freshly recruited employees. 
+Employing C# programming language and SQL Server Management Studio (SSMS) at the backend for robust data processing.
+            </div>
+            <h2 class="experience-sub-title project-title">GEO Joining </h2>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              Developed a responsive educational web application using React, featuring dynamic course search, detailed course listings, and interactive pricing options. 
+Implemented a user-friendly interface with Tailwind CSS, enhancing the overall user experience.
+            </div>
+            <h2 class="experience-sub-title project-title">EduQuest Course Finder</h2>
+          </div>
+      
+        <div class="details-container color-container">
+          <div class="article-container">
+            Built a full-stack task manager with separate employer and employee panels, including login functionality. Employer assign, review tasks and see the 
+            summary, while employee complete those tasks and can see their progress; both have personal ToDo lists.
+          </div>
+          <h2 class="experience-sub-title project-title">Task Manager</h2>
+        </div>
+      
+      <div class="details-container color-container">
+        <div class="article-container">
+          Developed a full-stack memory keeping project using ReactJS and MongoDB, featuring memory creation with images and tags, and interactive options to like 
+or delete memories. The application provides a seamless and intuitive interface for preserving and sharing personal moments.
+        </div>
+        <h2 class="experience-sub-title project-title">Memory Keeper</h2>
+      </div>
+    </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:shrmayukti05@gmail.com">shrmayukti05@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/yukti-sharma24">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; Yukti Sharma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
